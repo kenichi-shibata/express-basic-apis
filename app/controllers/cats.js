@@ -77,10 +77,13 @@ exports.category = function category(req,res){
 };
 
 exports.getCat = function getCat(req,res){
+	req.session.image = [];
+
 	catRequester(req,res,options,function(err,cats){
 		if(err) res.send(err);
 		else if(cats){
 			req.session.query = req.query;
+			// req.session.image.push 
 			res.render('cat',{cat:cats, category:req.query.category, size:req.query.size});
 		}
 		else{
@@ -98,4 +101,6 @@ exports.getList = function getList(req,res){
  });
 };
 
-module.exports.getNext = getNext; 
+
+
+module.exports.getNext = getNext;
