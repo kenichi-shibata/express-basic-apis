@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  div.container
+    img(src=''+cat)
+    p Hello! Please pick one of the options below
+    a(href="/users/dashboard" class="btn btn-primary") Home
+    a(href="/cats/next" class="btn btn-default") Next Cat
+    a(href="/cats/next" class="btn btn-default") Previous Cat
+    div(class="btn-group" role="group")
+      a(href="/cats/size/small" class="btn btn-success") Small
+      a(href="/cats/size/med" class="btn btn-success") Medium
+      a(href="/cats/size/full" class="btn btn-success") Full
+    button(class="btn btn-danger") Love this cat!
+    a(href="/cats/list" class="btn btn-primary") Categories
+    if(typeof(category)!=='undefined')  
+      div.alert.alert-info The category for this cats is #{category}
+        br
+        br
+        a(href="/cats/clear/category" class="btn btn-success") clear category
+    if(typeof(size)!=='undefined')  
+      div.alert.alert-info The size for this cats is #{size}
+        br
+        br
+        a(href="/cats/clear/size" class="btn btn-success") clear size    
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    // script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    // script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js')
+    // script(src='https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.3/holder.min.js')

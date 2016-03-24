@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    .login.well
+      h1  Welcome aboard!
+      div.container
+      if(typeof(invalid)!=='undefined')
+        div.alert.alert-danger #{invalid}   
+      else
+      form(id='register-form', method='POST', action='/register')
+        .form-group
+          label(for='fullname') Full Name
+          input(type='text', name='fullname', class='form-control', 
+            id='fullname', placeholder='Enter your full name',
+            required)   
+        .form-group
+          label(for='email') Email
+          input(type='email', name='email', class='form-control', 
+            id='email', placeholder='Enter email',
+            required)    
+        .form-group
+          label(for='username') Username
+          input(type='text', name='username', class='form-control', 
+            id='username', placeholder='Enter username',
+            required)
+        .form-group
+          label(for='password') Password
+          input(type='password', name='password', class='form-control', 
+            id='password', placeholder='Enter password'
+            required)
+        .form-group
+          button.btn.btn-default Register
+          a(href="loginPage" class="btn btn-success") Login
+//- need confirm email and password too lazy to do :) if you need go to http://www.telerik.com/blogs/form-validation-with-expressjs

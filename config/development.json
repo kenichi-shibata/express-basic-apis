@@ -1,0 +1,4 @@
+{
+	"database": "mongodb://localhost/testApp",
+	"apikey":"NzEzMjI"
+}
