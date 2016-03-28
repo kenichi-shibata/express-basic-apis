@@ -15,6 +15,7 @@
 - [ ] Host it in Herokuapp for quick demo
 - [ ] Make a tutorial how to start the project (is this needed?)
 - [ ] Make more documentation! Yay!
+- [ ] Add XMLHttpRequest to handle favorite cats
 
 ## RUN THIS!
 ```
