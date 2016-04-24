@@ -21,7 +21,7 @@ http://test-node01.herokuapp.com/
 - [x] implement validation (entry should not be null)
 - [ ] Make it a MERN stack using React
 - [ ] Use org-api and port it to Express
-- [ ] Host it in Herokuapp for quick demo
+- [x] Host it in Herokuapp for quick demo
 - [ ] Make a tutorial how to start the project (is this needed?)
 - [ ] Make more documentation! Yay!
 - [ ] Add XMLHttpRequest to handle favorite cats
