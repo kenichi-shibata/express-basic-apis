@@ -4,6 +4,10 @@
 http://test-node01.herokuapp.com/
 
 #Super Simple Express APP
+- [x] Authentication API (with encryption)
+- [ ] Blog post API
+- [ ] Todo API
+- [x] Cat API
 - [ ] Can be used for as a boilerplate
 
 ##Stack
