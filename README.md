@@ -1,4 +1,5 @@
 #We have Cats!
+![cat-image](http://thecatapi.com/api/images/get)
 ##Demo
 http://test-node01.herokuapp.com/
 
