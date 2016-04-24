@@ -21,6 +21,7 @@ http://test-node01.herokuapp.com/
 - [ ] Make a tutorial how to start the project (is this needed?)
 - [ ] Make more documentation! Yay!
 - [ ] Add XMLHttpRequest to handle favorite cats
+- [ ] Medium Blog post
 
 ## RUN THIS!
 ```
