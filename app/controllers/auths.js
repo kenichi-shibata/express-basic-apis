@@ -17,7 +17,7 @@ exports.register = function register(req,res){
 	});
 	// save a the userName
 	testUser.save(function(err,response){
-		if(err || !response) res.redirect('/registration?valid=false');
+		if(err || !response) res.redirect('/register?valid=false');
 		else if(response)
 		res.redirect('/login');
 	});
