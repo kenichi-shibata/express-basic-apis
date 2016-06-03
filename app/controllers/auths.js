@@ -19,7 +19,7 @@ exports.register = function register(req,res){
 	testUser.save(function(err,response){
 		if(err || !response) res.redirect('/registration?valid=false');
 		else if(response)
-		res.redirect('/loginPage');
+		res.redirect('/login');
 	});
 };
 
@@ -40,11 +40,11 @@ exports.loginPage = function loginPage(req,res){
 exports.login = function login(req,res){
     User.findOne({userName:req.body.username}, function(err,user){
 			if(err || !user)
-				res.redirect('/loginPage?valid=false');
+				res.redirect('/login?valid=false');
 		    else if(user){
 				user.comparePasswords(req.body.password, function(err,isMatch){
 					if(err || !isMatch){
-						res.redirect('/loginPage?valid=false');
+						res.redirect('/login?valid=false');
 					}
 					else if(isMatch){
             req.user = user;
