@@ -11,7 +11,7 @@
   "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata31.github.io)",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "0.8.5",
+    "bcrypt": "0.8.7",
     "body-parser": "~1.13.2",
     "client-sessions": "0.7.0",
     "config": "^1.19.0",
