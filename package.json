@@ -6,7 +6,7 @@
   "scripts": {
     "test": "gulp lint",
     "start": "NODE_ENV=production node ./bin/www",
-    "development": "NODE_ENV=development nodemon ./bin/www"
+    "dev": "NODE_ENV=development nodemon ./bin/www"
   },
   "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata31.github.io)",
   "license": "ISC",
